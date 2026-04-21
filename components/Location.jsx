@@ -5,7 +5,7 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const locationItems = [
   { name: 'Bang on Dwarka Expressway', time: '0 min' },
-  { name: 'NH-48(Delhi-Jaipur Highway)', time: '5 mins' },
+  { name: 'NH-48 (Delhi-Jaipur Highway)', time: '5 mins' },
   { name: 'T3 Airport via UER-II Tunnel', time: '15 mins' },
   { name: 'Upcoming Global City (1000+ acres)', time: 'Beside' },
   { name: 'KMP Expressway', time: 'Easy Access' },

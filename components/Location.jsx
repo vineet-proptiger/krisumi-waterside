@@ -4,10 +4,10 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const locationItems = [
-  { name: 'Bang on Dwa', time: '0 min' },
-  { name: 'NH-48', time: '5 mins' },
-  { name: 'T3 Airport via UER-II Tunnel', time: '20 mins' },
-  { name: 'Global City (1000+ acres)', time: 'Beside' },
+  { name: 'Bang on Dwarka Expressway', time: '0 min' },
+  { name: 'NH-48(Delhi-Jaipur Highway)', time: '5 mins' },
+  { name: 'T3 Airport via UER-II Tunnel', time: '15 mins' },
+  { name: 'Upcoming Global City (1000+ acres)', time: 'Beside' },
   { name: 'KMP Expressway', time: 'Easy Access' },
   { name: 'Manesar Industrial Hub', time: 'Easy Access' },
   { name: 'TCS & American Express (Amex)', time: '5 mins' },
@@ -33,7 +33,7 @@ const Location = () => {
             fontSize: '11px', fontWeight: '700', color: 'var(--color-gold)',
             fontFamily: F_JOST, letterSpacing: '0.1em', textTransform: 'uppercase',
             border: '1px solid var(--color-gold-light)', marginBottom: '10px',
-          }}>DXP, Sector 21, Gurgaon</span>
+          }}>Sector-36, A-Gurgaon</span>
           <h2 style={{
             fontFamily: F_JOST, fontWeight: '800', fontSize: '26px',
             color: '#111827', margin: '0 0 6px', letterSpacing: '-0.01em',

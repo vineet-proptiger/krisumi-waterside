@@ -19,19 +19,6 @@ const units = [
     isPopular: false,
   },
   {
-    type: "4+S LDK (Core to 4)",
-    size: "3500 - 3650 sq.ft",
-    price: "Ask For Price",
-    oldPrice: null,
-    btnText: "Get Cost Sheet",
-    features: [
-      "Tentative Payment Plan: 25:25:50",
-      "Rentals ₹80 psf & Rising",
-      "If Bankable Gets 1st Priority"
-    ],
-    isPopular: true,
-  },
-  {
     type: "3+S LDK (Core to 6)",
     size: "2700 - 2800 sq.ft",
     price: "Ask For Price",
@@ -44,6 +31,20 @@ const units = [
     ],
     isPopular: false,
   },
+  {
+    type: "4+S LDK (Core to 4)",
+    size: "3500 - 3650 sq.ft",
+    price: "Ask For Price",
+    oldPrice: null,
+    btnText: "Get Cost Sheet",
+    features: [
+      "Tentative Payment Plan: 25:25:50",
+      "Rentals ₹80 psf & Rising",
+      "If Bankable Gets 1st Priority"
+    ],
+    isPopular: true,
+  },
+  
 ];
 
 const Pricing = ({ setIsOpen }) => {

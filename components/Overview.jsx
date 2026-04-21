@@ -11,7 +11,7 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SERIF = 'var(--font-serif), Cormorant Garamond, serif'
 
-const PREVIEW_TEXT = `Krisumi Waterside Residence (Forest Reserve) Phase 5 brings a rare fusion of Japanese precision and Indian elegance to Gurgaon's skyline. Strategically located in Sector 36A along the Dwarka Expressway, this ultra-luxury address offers seamless connectivity while preserving a sense of calm, curated living.`
+const PREVIEW_TEXT = `Krisumi Waterside Residence (Forest Reserve) Phase 5 brings a rare fusion of Japanese precision and Indian elegance to Gurgaon's skyline. Strategically located in Sector 36A along the Dwarka Expressway, this ultra-luxury address offers seamless connectivity while preserving a sense of calm and curated living.`
 
 const MORE_TEXT = ` Spread across 5 acres, the development features two striking towers designed with minimalist aesthetics, clean lines, and thoughtful detailing. Spacious 3 & 4 LDK residences (approx. 2700–3600 sq. ft.) are crafted to deliver expansive layouts, abundant natural light, and refined interiors that reflect global standards. With its Indo-Japanese design philosophy, premium amenities, and a focus on privacy and sophistication, Krisumi Forest Reserve Phase 5 is envisioned as a landmark destination for those who seek elevated, future-ready luxury in Gurgaon.`
 

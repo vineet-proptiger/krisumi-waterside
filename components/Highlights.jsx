@@ -134,7 +134,7 @@ const Highlights = ({ setIsOpen }) => (
           color: '#111827', margin: 0, letterSpacing: '-0.01em',
         }}>
           Highlights Gallery:{' '}
-          <span style={{ color: 'var(--color-gold)' }}> Krisumi Waterside</span>
+          <span style={{ color: 'var(--color-gold)' }}>Krisumi Forest Reserve</span>
         </h2>
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
           <span style={{

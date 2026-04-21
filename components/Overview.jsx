@@ -211,7 +211,7 @@ const Overview = () => {
             fontFamily: F_JOST, fontWeight: '800', fontSize: '26px',
             color: '#111827', margin: 0, letterSpacing: '-0.01em',
           }}>
-            Project <span style={{ color: 'var(--color-gold)' }}>Overview</span>
+            Krisumi Forest Reserve <span style={{ color: 'var(--color-gold)' }}>Overview</span>
           </h2>
           <div style={{ display: 'flex', justifyContent: 'center', marginTop: '10px' }}>
             <span style={{

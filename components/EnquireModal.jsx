@@ -53,8 +53,8 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
           <Image src={popupImage} alt="Krisumi Waterside" fill className="object-cover" sizes="(max-width: 768px) 0vw, 45vw" />
           <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,26,46,0.85) 0%, rgba(26,26,46,0.1) 60%)' }} />
           <div className="absolute bottom-0 left-0 right-0 p-5 text-white z-10">
-            <p className="text-[10px] font-semibold tracking-[3px] uppercase opacity-80 mb-1" style={{ fontFamily: F_SANS, color: 'var(--color-gold)' }}>Krisumi Waterside</p>
-            <p style={{ fontFamily: F_JOST, fontSize: '13px', fontWeight: 500, opacity: 0.85 }}>3+S / 4+S LDK · EOI ₹41 & 51 Lakh</p>
+            <p className="text-[10px] font-semibold tracking-[3px] uppercase opacity-80 mb-1" style={{ fontFamily: F_SANS, color: 'var(--color-gold)' }}>Krisumi Forest Reserve </p>
+            <p style={{ fontFamily: F_JOST, fontSize: '13px', fontWeight: 500, opacity: 0.85 }}>3+S / 4+S LDK · EOI ₹41 Lakh*</p>
           </div>
         </div>
 

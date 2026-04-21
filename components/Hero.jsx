@@ -196,7 +196,7 @@ const Hero = ({ setIsOpen }) => {
               </p>
               {[
                 'Two Iconic Skyline Towers',
-                'Cascades Club – 1.6 Lakh sq. ft.',
+                'Cascades Club – 1.6 Lakh* sq. ft.',
                 'A Fusion of Indo‑Japanese Artistry',
                 'A Rare Life Surrounded by Nature',
               ].map((item, i, arr) => (

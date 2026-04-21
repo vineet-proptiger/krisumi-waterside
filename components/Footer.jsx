@@ -20,7 +20,7 @@ const Footer = () => (
       </div>
       <p style={{ fontSize: '15px', color: '#bbb', fontFamily: F_SANS, lineHeight: 1.8, marginBottom: '32px', textAlign: 'justify' }}
         data-aos="fade-in" data-aos-delay="100">
-        Krisumi Waterside is an ultra-luxury forest residential development offering 3+S LDK &amp; 4+S LDK residences at Phase 5, The Forest Reserve — part of the iconic 33-acre Krisumi City in Gurgaon. Featuring deep forest walks, mist ponds, natural waterscapes, lap pool, and the 1.6 lakh sq.ft Cascades Club — Krisumi Waterside is crafted by Sumitomo Corporation (Fortune 500, Japan) &amp; Krishna Group, India, for those seeking the finest forest living experience.
+        Krisumi Waterside is an ultra-luxury forest residential development offering 3+S LDK &amp; 4+S LDK residences at Phase 5, The Forest Reserve — part of the iconic 33-acre Krisumi City in Gurgaon. Featuring deep forest walks, mist ponds, natural waterscapes, lap pool, and the 1.6 lakh* sq.ft Cascades Club — Krisumi Waterside is crafted by Sumitomo Corporation (Fortune 500, Japan) &amp; Krishna Group, India, for those seeking the finest forest living experience.
       </p>
       {/* <div style={{ borderTop: '1px solid #333', marginBottom: '24px' }} /> */}
     </div>

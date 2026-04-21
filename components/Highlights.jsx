@@ -30,7 +30,7 @@ const highlights = [
     icon: <Waves {...highlightIconProps} />,
   },
   {
-    text: 'Cascades Club — 1.6 Lakh sq.ft',
+    text: 'Cascades Club — 1.6 Lakh* sq.ft',
     icon: <Dumbbell {...highlightIconProps} />,
   },
   {

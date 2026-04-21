@@ -10,7 +10,7 @@ const locationItems = [
   { name: 'Upcoming Global City (1000+ acres)', time: 'Beside' },
   { name: 'KMP Expressway', time: 'Easy Access' },
   { name: 'Manesar Industrial Hub', time: 'Easy Access' },
-  { name: 'TCS & American Express (Amex)', time: '5 mins' },
+  { name: 'TCS & American Express offices', time: '5 mins' },
   { name: 'Leading Schools, Hospitals & Malls', time: '10 mins' },
 ]
 

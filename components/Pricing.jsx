@@ -8,7 +8,7 @@ const units = [
   {
     type: "3+S LDK (Core to 4)",
     size: "2700 - 2800 sq.ft",
-    price: "EOI ₹41 Lakh",
+    price: "EOI ₹41 Lakh*",
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [

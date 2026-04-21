@@ -124,7 +124,7 @@ const Hero = ({ setIsOpen }) => {
                 letterSpacing: '0.01em', lineHeight: 1.5
               }}
                 data-aos="fade-up" data-aos-delay="280">
-                Krisumi Forest Reserve <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>Indo‑Japanese</strong>, an exclusive <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>pre-launch</strong> of ultra-luxury homes on Dwarka Expressway
+                Krisumi <strong style={{ color: "var(--color-gold)", fontWeight: "800" }}>Forest Reserve</strong> presents <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>Indo‑Japanese</strong> themed ultra-luxury residences, an exclusive <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>new-launch</strong> on Dwarka Expressway.
               </p>
               {/* ── Google Rating ── */}
               {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}

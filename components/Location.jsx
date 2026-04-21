@@ -138,7 +138,7 @@ const Location = () => {
                   color: '#fff', fontSize: '11px', fontFamily: F_JOST,
                   fontWeight: '700', letterSpacing: '0.04em'
                 }}>
-                  DXP, Sector 21, Gurgaon
+                  Sector-36A, Gurgaon
                 </span>
               </div>
             </div>

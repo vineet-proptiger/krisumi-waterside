@@ -241,7 +241,7 @@ const Hero = ({ setIsOpen }) => {
                 fontFamily: F_SANS, fontSize: '11px', color: '#9ca3af',
                 margin: '0 0 8px', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: '600'
               }}>
-                EOI Starting At
+                Price Starting At
               </p>
               <span className="blink-price" style={{
                 fontSize: '28px', fontWeight: '800',

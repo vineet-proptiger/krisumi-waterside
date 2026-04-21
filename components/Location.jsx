@@ -4,7 +4,7 @@ const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
 const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const locationItems = [
-  { name: 'Bang on DXP', time: '0 min' },
+  { name: 'Bang on Dwa', time: '0 min' },
   { name: 'NH-48', time: '5 mins' },
   { name: 'T3 Airport via UER-II Tunnel', time: '20 mins' },
   { name: 'Global City (1000+ acres)', time: 'Beside' },

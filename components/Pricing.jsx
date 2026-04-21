@@ -12,7 +12,6 @@ const units = [
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [
-      "Phase 1 Delivered 3× Returns",
       "Tentative Payment Plan: 25:25:50",
       "Rentals ₹80 psf & Rising",
       "If Bankable Gets 1st Priority"
@@ -26,7 +25,6 @@ const units = [
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [
-      "Phase 1 Delivered 3× Returns",
       "Tentative Payment Plan: 25:25:50",
       "Rentals ₹80 psf & Rising",
       "If Bankable Gets 1st Priority"
@@ -40,7 +38,6 @@ const units = [
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [
-      "Phase 1 Delivered 3× Returns",
       "Tentative Payment Plan: 25:25:50",
       "Rentals ₹80 psf & Rising",
       "If Bankable Gets 1st Priority"

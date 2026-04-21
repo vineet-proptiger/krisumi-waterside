@@ -84,7 +84,7 @@ const Hero = ({ setIsOpen }) => {
               color: '#fff', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px'
             }}>
               <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
-              EON Window Now Opens
+              EOI Window Now Opens
               <span style={{ display: 'inline-block', width: '24px', height: '1.5px', background: 'rgba(255,255,255,0.6)' }} />
             </p>
           </div>

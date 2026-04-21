@@ -93,19 +93,19 @@ const Hero = ({ setIsOpen }) => {
             {/* ── New Launch Badge ── */}
             <div className="flex justify-center -mt-2 mb-1" data-aos="zoom-in" data-aos-delay="400">
               <span style={{
-                background: 'var(--color-gold-bg)',
-                color: 'var(--color-gold)',
-                padding: '4px 14px',
+                background: 'linear-gradient(135deg, var(--color-gold) 0%, var(--color-gold-dark) 100%)',
+                color: '#fff',
+                padding: '6px 20px',
                 borderRadius: '50px',
-                fontSize: '11px',
-                fontWeight: '700',
+                fontSize: '13px',
+                fontWeight: '800',
                 textTransform: 'uppercase',
-                letterSpacing: '0.1em',
-                border: '1px solid var(--color-gold-light)',
-                boxShadow: '0 2px 8px rgba(181,135,40,0.12)',
-                fontFamily: F_JOST
+                letterSpacing: '0.14em',
+                border: '2px solid rgba(255,255,255,0.35)',
+                boxShadow: '0 4px 18px rgba(181,135,40,0.45)',
+                fontFamily: F_JOST,
               }}>
-                New Launch
+                ✦ New Launch Phase-5 ✦
               </span>
             </div>
 
@@ -124,7 +124,7 @@ const Hero = ({ setIsOpen }) => {
                 letterSpacing: '0.01em', lineHeight: 1.5
               }}
                 data-aos="fade-up" data-aos-delay="280">
-                Krisumi Forest Reserve Phase 5, an exclusive pre-launch of ultra-luxury homes on Dwarka Expressway
+                Krisumi Forest Reserve <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>Indo‑Japanese</strong>, an exclusive <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>pre-launch</strong> of ultra-luxury homes on Dwarka Expressway
               </p>
               {/* ── Google Rating ── */}
               {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
@@ -155,10 +155,10 @@ const Hero = ({ setIsOpen }) => {
               gap: '0',
             }} data-aos="fade-up" data-aos-delay="360">
               {[
-                { value: '33', label: 'Acres' },
-                { value: '3&4 LDK', label: 'Configuration' },
+                { value: '33', label: 'Intigrated Township' },
+                { value: '3 & 4 LDK', label: 'Configuration' },
                 { value: '25:25:50', label: 'Payment Plan' },
-                { value: '₹41 & 51 Lakh', label: 'EOI (non-bankable cheques)' },
+                { value: '₹41 Lacs*', label: 'EOI (non-bankable cheques)' },
               ].map((s, i) => (
                 <div key={i} style={{
                   textAlign: 'center',
@@ -248,7 +248,7 @@ const Hero = ({ setIsOpen }) => {
                 color: 'var(--color-gold)',
                 fontFamily: F_JOST, lineHeight: 1, display: 'block',
               }}>
-                6.5 Cr*
+                ₹6.5 Cr* Onwards
               </span>
             </div>
 
@@ -261,7 +261,7 @@ const Hero = ({ setIsOpen }) => {
                 strokeLinecap="round" strokeLinejoin="round">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
               </svg>
-              Download Brochure
+              Request Brochure
             </button>
 
             {/* ── Trust Badges ── */}

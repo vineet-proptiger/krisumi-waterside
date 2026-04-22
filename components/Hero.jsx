@@ -313,8 +313,8 @@ export default Hero
 // import Image from 'next/image'
 // import { heroImages } from '../lib/images'
 
-// const F_SERIF = 'var(--font-cormorant, "Cormorant Garamond", Georgia, serif)'
-// const F_SANS  = 'var(--font-jost, "Jost", "Open Sans", sans-serif)'
+// const F_JOST = 'var(--font-jost), Montserrat, sans-serif'
+// const F_SANS  = 'var(--font-sans), "Open Sans", sans-serif'
 
 // const slides = [heroImages.banner, heroImages.banner2]
 // const INTERVAL = 5500
@@ -463,12 +463,12 @@ export default Hero
 //               </span>
 //             </div>
 //             <h1 style={{
-//               fontFamily:F_SERIF,
+//               fontFamily:F_JOST,
 //               fontSize:'clamp(28px, 3.4vw, 52px)',
-//               fontWeight:600, color:'#fff', lineHeight:1.05, letterSpacing:'-0.02em',
+//               fontWeight:800, color:'#fff', lineHeight:1.05, letterSpacing:'-0.02em',
 //             }}>
 //               Krisumi Waterside<br />
-//               <em style={{ fontStyle:'italic', color:'var(--color-gold)' }}>Residence</em>
+//               <span style={{ color:'var(--color-gold)' }}>Residence</span>
 //             </h1>
 //           </div>
 
@@ -498,7 +498,7 @@ export default Hero
 //         }}>
 
 //           {/* A — Project name */}
-//           <div className="w-full lg:w-[240px]" style={{
+//           <div className="w-full lg:w-[280px]" style={{
 //             flex: '0 0 auto',
 //             padding:'18px 24px',
 //             background:'var(--color-dark, #14110D)',
@@ -508,7 +508,7 @@ export default Hero
 //             {/* <h2 style={{ fontFamily:F_SERIF, fontSize:'20px', fontWeight:600, color:'#fff', lineHeight:1.15 }}>
 //               Waterside <em style={{ fontStyle:'italic', color:'var(--color-gold)' }}>Residence</em>
 //             </h2> */}
-//             <p style={{ fontFamily:F_SANS, fontSize:'14.5px', lineHeight:1.6, color:'rgba(255,255,255,0.45)', fontWeight:300 }}>
+//             <p style={{ fontFamily:F_SANS, fontSize:'13px', lineHeight:1.6, color:'rgba(255,255,255,0.45)', fontWeight:300 }}>
 //               <span style={{ color:'var(--color-gold)', fontWeight:600 }}>Forest Reserve</span> presents{' '}
 //               <strong style={{ color:'rgba(255,255,255,0.75)', fontWeight:600 }}>Indo‑Japanese</strong>{' '}
 //               ultra‑luxury — exclusive{' '}
@@ -537,7 +537,7 @@ export default Hero
 //                 background:'var(--color-bg, #F8F4EE)',
 //                 cursor:'default',
 //               }}>
-//                 <p style={{ fontFamily:F_SERIF, fontSize:'20px', fontWeight:700, color:'var(--color-dark)', lineHeight:1, marginBottom:'3px' }}>{s.val}</p>
+//                 <p style={{ fontFamily:F_JOST, fontSize:'20px', fontWeight:700, color:'var(--color-dark)', lineHeight:1, marginBottom:'3px' }}>{s.val}</p>
 //                 <p style={{ fontFamily:F_SANS, fontSize:'9px', fontWeight:700, letterSpacing:'0.13em', textTransform:'uppercase', color:'var(--color-muted, #7A7268)', lineHeight:1.35, whiteSpace:'pre-line' }}>{s.lbl}</p>
 //               </div>
 //             ))}
@@ -549,7 +549,7 @@ export default Hero
 //             borderRight:'1px solid rgba(20,17,13,0.1)',
 //             display:'flex', flexDirection:'column', justifyContent:'center', gap:'6px',
 //           }}>
-//             <p style={{ fontFamily:F_SANS, fontSize:'12px', fontWeight:700, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--color-gold-dark, #8A6E28)', marginBottom:'4px' }}>
+//             <p style={{ fontFamily:F_JOST, fontSize:'12px', fontWeight:700, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--color-gold-dark, #8A6E28)', marginBottom:'4px' }}>
 //               Privileged Launch Advantages
 //             </p>
 //             {[
@@ -566,19 +566,19 @@ export default Hero
 //           </div>
 
 //           {/* D — Price + CTA */}
-//           <div className="w-full lg:w-[220px]" style={{
+//           <div className="w-full lg:w-[260px]" style={{
 //             flex: '0 0 auto', padding:'16px 22px',
 //             background:'var(--color-dark, #14110D)',
 //             display:'flex', flexDirection:'column', justifyContent:'center', gap:'10px',
 //           }}>
 //             <div style={{ textAlign:'center' }}>
-//               <p style={{ fontFamily:F_SANS, fontSize:'10px', fontWeight:600, color:'rgba(255,255,255,0.4)', letterSpacing:'0.06em', marginBottom:'2px' }}>
+//               <p style={{ fontFamily:F_SANS, fontSize:'14.5px', fontWeight:600, color:'rgba(255,255,255,0.4)', letterSpacing:'0.06em', marginBottom:'2px' }}>
 //                 3 / 4 LDK Residences
 //               </p>
-//               <p style={{ fontFamily:F_SANS, fontSize:'8px', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.25)', marginBottom:'4px' }}>
+//               <p style={{ fontFamily:F_SANS, fontSize:'11px', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.25)', marginBottom:'4px' }}>
 //                 Starting at
 //               </p>
-//               <p style={{ fontFamily:F_SERIF, fontSize:'32px', fontWeight:600, color:'var(--color-gold)', lineHeight:1 }}>
+//               <p className="blink-price" style={{ fontFamily:F_JOST, fontSize:'32px', fontWeight:600, color:'var(--color-gold)', lineHeight:1 }}>
 //                 ₹6.5 Cr*
 //               </p>
 //             </div>
@@ -587,17 +587,17 @@ export default Hero
 //               onClick={() => setIsOpen(true)}
 //               style={{
 //                 width:'100%', padding:'12px',
-//                 background:'var(--color-gold)', color:'var(--color-dark, #14110D)',
-//                 border:'none', borderRadius:'2px',
-//                 fontFamily:F_SANS, fontSize:'11px', fontWeight:700,
-//                 letterSpacing:'0.16em', textTransform:'uppercase', cursor:'pointer',
+//                 background:'var(--color-gold)', color:'#fff',
+//                 border:'none', borderRadius:'6px',
+//                 fontFamily:F_JOST, fontSize:'12.5px', fontWeight:700,
+//                 letterSpacing:'0.10em', textTransform:'uppercase', cursor:'pointer',
 //                 boxShadow:'0 4px 18px rgba(201,168,76,0.4)',
 //                 transition:'opacity 0.2s, transform 0.15s',
 //               }}
 //               onMouseEnter={e => { e.currentTarget.style.opacity='0.88'; e.currentTarget.style.transform='translateY(-1px)' }}
 //               onMouseLeave={e => { e.currentTarget.style.opacity='1'; e.currentTarget.style.transform='translateY(0)' }}
 //             >
-//               ↓ &nbsp;Request Brochure
+//               Request Brochure
 //             </button>
 
 //             {/* Trust mini */}
@@ -611,11 +611,11 @@ export default Hero
 //                   flex:1, display:'flex', flexDirection:'column', alignItems:'center', gap:'3px',
 //                   padding:'5px 2px',
 //                   border:'1px solid rgba(255,255,255,0.07)',
-//                   borderRadius:'3px',
+//                   borderRadius:'6px',
 //                   background:'rgba(255,255,255,0.04)',
 //                 }}>
 //                   <span style={{ fontSize:'13px', lineHeight:1 }}>{b.icon}</span>
-//                   <span style={{ fontFamily:F_SANS, fontSize:'7.5px', fontWeight:600, letterSpacing:'0.06em', textTransform:'uppercase', color:'rgba(255,255,255,0.3)', textAlign:'center', lineHeight:1.2, whiteSpace:'pre-line' }}>{b.label}</span>
+//                   <span style={{ fontFamily:F_SANS, fontSize:'9px', fontWeight:600, letterSpacing:'0.06em', textTransform:'uppercase', color:'rgba(255,255,255,0.3)', textAlign:'center', lineHeight:1.2, whiteSpace:'pre-line' }}>{b.label}</span>
 //                 </div>
 //               ))}
 //             </div>

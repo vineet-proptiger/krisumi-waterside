@@ -417,11 +417,25 @@ export default Hero
 //               animation:'heroFadeDown 0.7s 0.2s ease both',
 //             }}
 //           >
-//             {/* Logo Spacer */}
-//             <div className="hidden sm:block" />
+//             {/* EOI Badge — Left */}
+//             <div style={{
+//               display:'flex', alignItems:'center', gap:'5px',
+//               background:'rgba(30,58,47,0.75)', border:'1px solid rgba(45,82,66,0.7)',
+//               backdropFilter:'blur(10px)', padding:'4px 10px', smPadding:'6px 14px', borderRadius:'40px',
+//               animation:'heroFadeDown 0.7s 0.2s ease both',
+//             }}
+//             className="px-3 py-1 sm:px-4 sm:py-1.5"
+//             >
+//               <span style={{ display:'inline-block', width:'5px', height:'5px', borderRadius:'50%', background:'#4ADE80', animation:'livepulse 2s infinite' }} />
+//               <span style={{ fontFamily:F_SANS, fontSize:'clamp(9px, 2vw, 11px)', fontWeight:600, color:'rgba(255,255,255,0.85)', whiteSpace: 'nowrap' }}>
+//                 EOI Now Open
+//               </span>
+//             </div>
 
-//             {/* Badges */}
-//             <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3 w-full sm:w-auto">
+//             {/* New Launch Badge — Right */}
+//             <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3 w-full sm:w-auto"
+//               style={{ animation:'heroFadeDown 0.7s 0.2s ease both' }}
+//             >
 //               <span style={{
 //                 fontFamily:F_SANS, fontSize:'clamp(8px, 2vw, 10px)', fontWeight:700,
 //                 letterSpacing:'0.15em', textTransform:'uppercase',
@@ -435,18 +449,6 @@ export default Hero
 //               >
 //                 ✦ New Launch · Phase 5
 //               </span>
-//               <div style={{
-//                 display:'flex', alignItems:'center', gap:'5px',
-//                 background:'rgba(30,58,47,0.75)', border:'1px solid rgba(45,82,66,0.7)',
-//                 backdropFilter:'blur(10px)', padding:'4px 10px', smPadding:'6px 14px', borderRadius:'40px',
-//               }}
-//               className="px-3 py-1 sm:px-4 sm:py-1.5"
-//               >
-//                 <span style={{ display:'inline-block', width:'5px', height:'5px', borderRadius:'50%', background:'#4ADE80', animation:'livepulse 2s infinite' }} />
-//                 <span style={{ fontFamily:F_SANS, fontSize:'clamp(9px, 2vw, 11px)', fontWeight:600, color:'rgba(255,255,255,0.85)', whiteSpace: 'nowrap' }}>
-//                   EOI Now Open
-//                 </span>
-//               </div>
 //             </div>
 //           </nav>
 

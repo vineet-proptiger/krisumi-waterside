@@ -300,3 +300,329 @@ const Hero = ({ setIsOpen }) => {
 }
 
 export default Hero
+
+
+
+
+
+
+
+
+// 'use client'
+// import { useState, useEffect, useRef } from 'react'
+// import Image from 'next/image'
+// import { heroImages } from '../lib/images'
+
+// const F_SERIF = 'var(--font-cormorant, "Cormorant Garamond", Georgia, serif)'
+// const F_SANS  = 'var(--font-jost, "Jost", "Open Sans", sans-serif)'
+
+// const slides = [heroImages.banner, heroImages.banner2]
+// const INTERVAL = 5500
+
+// export default function Hero({ setIsOpen }) {
+//   const [cur, setCur]         = useState(0)
+//   const [progress, setProgress] = useState(0)
+//   const rafRef  = useRef(null)
+//   const startRef = useRef(null)
+
+//   // Auto-advance + progress bar
+//   useEffect(() => {
+//     setProgress(0)
+//     startRef.current = Date.now()
+//     cancelAnimationFrame(rafRef.current)
+
+//     function tick() {
+//       const pct = Math.min((Date.now() - startRef.current) / INTERVAL * 100, 100)
+//       setProgress(pct)
+//       if (pct < 100) rafRef.current = requestAnimationFrame(tick)
+//     }
+//     rafRef.current = requestAnimationFrame(tick)
+
+//     const timer = setTimeout(() => setCur(p => (p + 1) % slides.length), INTERVAL)
+//     return () => { clearTimeout(timer); cancelAnimationFrame(rafRef.current) }
+//   }, [cur])
+
+//   const goTo = (idx) => setCur(idx)
+
+//   return (
+//     <>
+//       {/* ── KEYFRAMES ── */}
+//       <style>{`
+//         @keyframes heroFadeDown { from{opacity:0;transform:translateY(-12px)} to{opacity:1;transform:translateY(0)} }
+//         @keyframes heroRiseUp   { from{opacity:0;transform:translateY(22px)}  to{opacity:1;transform:translateY(0)} }
+//         @keyframes heroSlideUp  { from{opacity:0;transform:translateY(30px)}  to{opacity:1;transform:translateY(0)} }
+//         @keyframes livepulse {
+//           0%  { box-shadow:0 0 0 0 rgba(74,222,128,0.6); }
+//           70% { box-shadow:0 0 0 6px rgba(74,222,128,0); }
+//           100%{ box-shadow:0 0 0 0 rgba(74,222,128,0); }
+//         }
+//       `}</style>
+
+//       <div style={{ 
+//         width: '100%', 
+//         height: 'calc(100vh - 80px)', 
+//         marginTop: '80px',
+//         display: 'flex', 
+//         flexDirection: 'column', 
+//         overflow: 'hidden', 
+//         background: '#14110D' 
+//       }}>
+
+//         {/* ══════════════════════════════
+//             IMAGE STAGE — top 65%
+//         ══════════════════════════════ */}
+//         <div style={{ flex:'0 0 65%', position:'relative', overflow:'hidden' }}>
+
+//           {/* Carousel track */}
+//           <div style={{
+//             position:'absolute', inset:0,
+//             display:'flex',
+//             transform:`translateX(-${cur * 100}%)`,
+//             transition:'transform 1s cubic-bezier(0.86,0,0.07,1)',
+//           }}>
+//             {slides.map((src, idx) => (
+//               <div key={idx} style={{
+//                 flex:'0 0 100%', height:'100%', position:'relative', overflow:'hidden',
+//               }}>
+//                 <div style={{
+//                   position:'absolute', inset:'-3%',
+//                   transform: cur === idx ? 'scale(1.06)' : 'scale(1)',
+//                   transition:'transform 8s ease-out',
+//                 }}>
+//                   <Image
+//                     src={src}
+//                     alt={`Krisumi Waterside ${idx + 1}`}
+//                     fill
+//                     className="object-cover"
+//                     priority={idx === 0}
+//                     sizes="100vw"
+//                   />
+//                 </div>
+//               </div>
+//             ))}
+//           </div>
+
+//           {/* Light bottom vignette */}
+//           <div style={{
+//             position:'absolute', bottom:0, left:0, right:0, height:'45%', zIndex:3,
+//             background:'linear-gradient(to top, rgba(20,17,13,0.82) 0%, rgba(20,17,13,0.18) 60%, transparent 100%)',
+//             pointerEvents:'none',
+//           }} />
+
+//           {/* Top nav */}
+//           <nav 
+//             className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between p-3 sm:p-6 lg:p-10"
+//             style={{
+//               background:'linear-gradient(to bottom, rgba(14,11,8,0.65) 0%, transparent 100%)',
+//               animation:'heroFadeDown 0.7s 0.2s ease both',
+//             }}
+//           >
+//             {/* Logo Spacer */}
+//             <div className="hidden sm:block" />
+
+//             {/* Badges */}
+//             <div className="flex flex-wrap items-center justify-end gap-2 sm:gap-3 w-full sm:w-auto">
+//               <span style={{
+//                 fontFamily:F_SANS, fontSize:'clamp(8px, 2vw, 10px)', fontWeight:700,
+//                 letterSpacing:'0.15em', textTransform:'uppercase',
+//                 color:'var(--color-gold)',
+//                 border:'1px solid var(--color-gold-light, rgba(201,168,76,0.3))',
+//                 padding:'4px 10px', smPadding:'6px 14px', borderRadius:'2px',
+//                 background:'rgba(14,11,8,0.5)', backdropFilter:'blur(8px)',
+//                 whiteSpace: 'nowrap'
+//               }}
+//               className="px-2 py-1 sm:px-4 sm:py-1.5"
+//               >
+//                 ✦ New Launch · Phase 5
+//               </span>
+//               <div style={{
+//                 display:'flex', alignItems:'center', gap:'5px',
+//                 background:'rgba(30,58,47,0.75)', border:'1px solid rgba(45,82,66,0.7)',
+//                 backdropFilter:'blur(10px)', padding:'4px 10px', smPadding:'6px 14px', borderRadius:'40px',
+//               }}
+//               className="px-3 py-1 sm:px-4 sm:py-1.5"
+//               >
+//                 <span style={{ display:'inline-block', width:'5px', height:'5px', borderRadius:'50%', background:'#4ADE80', animation:'livepulse 2s infinite' }} />
+//                 <span style={{ fontFamily:F_SANS, fontSize:'clamp(9px, 2vw, 11px)', fontWeight:600, color:'rgba(255,255,255,0.85)', whiteSpace: 'nowrap' }}>
+//                   EOI Now Open
+//                 </span>
+//               </div>
+//             </div>
+//           </nav>
+
+//           {/* Project title overlaid on image */}
+//           <div style={{
+//             position:'absolute', bottom:0, left:0, zIndex:5,
+//             padding:'0 40px 22px',
+//             animation:'heroRiseUp 0.9s 0.3s cubic-bezier(0.16,1,0.3,1) both',
+//           }}>
+//             <div style={{ display:'flex', alignItems:'center', gap:'10px', marginBottom:'8px' }}>
+//               <span style={{ display:'block', width:'28px', height:'1px', background:'var(--color-gold)', opacity:0.8 }} />
+//               <span style={{ fontFamily:F_SANS, fontSize:'10px', fontWeight:600, letterSpacing:'0.22em', textTransform:'uppercase', color:'var(--color-gold)' }}>
+//                 Dwarka Expressway, Gurugram
+//               </span>
+//             </div>
+//             <h1 style={{
+//               fontFamily:F_SERIF,
+//               fontSize:'clamp(28px, 3.4vw, 52px)',
+//               fontWeight:600, color:'#fff', lineHeight:1.05, letterSpacing:'-0.02em',
+//             }}>
+//               Krisumi Waterside<br />
+//               <em style={{ fontStyle:'italic', color:'var(--color-gold)' }}>Residence</em>
+//             </h1>
+//           </div>
+
+//           {/* Pip dots */}
+//           <div style={{ position:'absolute', bottom:'20px', right:'40px', zIndex:6, display:'flex', gap:'7px' }}>
+//             {slides.map((_, idx) => (
+//               <button key={idx} onClick={() => goTo(idx)} style={{
+//                 height:'2px', border:'none', borderRadius:'1px', cursor:'pointer', padding:0,
+//                 width: cur === idx ? '40px' : '22px',
+//                 background: cur === idx ? 'var(--color-gold)' : 'rgba(255,255,255,0.3)',
+//                 transition:'all 0.4s ease',
+//               }} />
+//             ))}
+//           </div>
+
+//           {/* Progress bar removed */}
+//         </div>
+
+//         {/* ══════════════════════════════
+//             INFO STRIP — bottom 35%
+//         ══════════════════════════════ */}
+//         <div className="flex flex-col lg:flex-row" style={{
+//           flex: 1,
+//           background: 'var(--color-bg, #F8F4EE)',
+//           animation: 'heroSlideUp 0.8s 0.5s cubic-bezier(0.16,1,0.3,1) both',
+//           overflow: 'hidden',
+//         }}>
+
+//           {/* A — Project name */}
+//           <div className="w-full lg:w-[240px]" style={{
+//             flex: '0 0 auto',
+//             padding:'18px 24px',
+//             background:'var(--color-dark, #14110D)',
+//             display:'flex', flexDirection:'column', justifyContent:'center', gap:'8px',
+//             borderRight:'1px solid rgba(255,255,255,0.06)',
+//           }}>
+//             {/* <h2 style={{ fontFamily:F_SERIF, fontSize:'20px', fontWeight:600, color:'#fff', lineHeight:1.15 }}>
+//               Waterside <em style={{ fontStyle:'italic', color:'var(--color-gold)' }}>Residence</em>
+//             </h2> */}
+//             <p style={{ fontFamily:F_SANS, fontSize:'14.5px', lineHeight:1.6, color:'rgba(255,255,255,0.45)', fontWeight:300 }}>
+//               <span style={{ color:'var(--color-gold)', fontWeight:600 }}>Forest Reserve</span> presents{' '}
+//               <strong style={{ color:'rgba(255,255,255,0.75)', fontWeight:600 }}>Indo‑Japanese</strong>{' '}
+//               ultra‑luxury — exclusive{' '}
+//               <span style={{ color:'var(--color-gold)', fontWeight:600 }}>new‑launch</span>{' '}
+//               on Dwarka Expressway.
+//             </p>
+//           </div>
+
+//           {/* B — Specs 2×2 */}
+//           <div className="w-full lg:w-[320px]" style={{
+//             flex: '0 0 auto',
+//             display:'grid', gridTemplateColumns:'1fr 1fr',
+//             borderRight:'1px solid rgba(20,17,13,0.1)',
+//           }}>
+//             {[
+//               { val:'33',        lbl:'Acres\nTownship'   },
+//               { val:'3 & 4 LDK', lbl:'Config-\nuration'  },
+//               { val:'25:25:50',  lbl:'Payment\nPlan'     },
+//               { val:'₹41 L*',    lbl:'EOI Non-\nBankable' },
+//             ].map((s, i) => (
+//               <div key={i} style={{
+//                 padding:'14px 16px',
+//                 display:'flex', flexDirection:'column', justifyContent:'center',
+//                 borderRight: i % 2 === 0 ? '1px solid rgba(20,17,13,0.1)' : 'none',
+//                 borderBottom: i < 2 ? '1px solid rgba(20,17,13,0.1)' : 'none',
+//                 background:'var(--color-bg, #F8F4EE)',
+//                 cursor:'default',
+//               }}>
+//                 <p style={{ fontFamily:F_SERIF, fontSize:'20px', fontWeight:700, color:'var(--color-dark)', lineHeight:1, marginBottom:'3px' }}>{s.val}</p>
+//                 <p style={{ fontFamily:F_SANS, fontSize:'9px', fontWeight:700, letterSpacing:'0.13em', textTransform:'uppercase', color:'var(--color-muted, #7A7268)', lineHeight:1.35, whiteSpace:'pre-line' }}>{s.lbl}</p>
+//               </div>
+//             ))}
+//           </div>
+
+//           {/* C — Advantages */}
+//           <div style={{
+//             flex:1, padding:'14px 20px',
+//             borderRight:'1px solid rgba(20,17,13,0.1)',
+//             display:'flex', flexDirection:'column', justifyContent:'center', gap:'6px',
+//           }}>
+//             <p style={{ fontFamily:F_SANS, fontSize:'12px', fontWeight:700, letterSpacing:'0.2em', textTransform:'uppercase', color:'var(--color-gold-dark, #8A6E28)', marginBottom:'4px' }}>
+//               Privileged Launch Advantages
+//             </p>
+//             {[
+//               'Two Iconic Skyline Towers',
+//               'Cascades Club — 1.6 Lakh* sq. ft.',
+//               'Fusion of Indo‑Japanese Artistry',
+//               'A Rare Life Surrounded by Nature',
+//             ].map((item, i) => (
+//               <div key={i} style={{ display:'flex', alignItems:'center', gap:'8px' }}>
+//                 <span style={{ width:'4px', height:'4px', borderRadius:'50%', background:'var(--color-gold)', flexShrink:0, opacity:0.8 }} />
+//                 <span style={{ fontFamily:F_SANS, fontSize:'13.5px', fontWeight:500, color:'var(--color-dark)' }}>{item}</span>
+//               </div>
+//             ))}
+//           </div>
+
+//           {/* D — Price + CTA */}
+//           <div className="w-full lg:w-[220px]" style={{
+//             flex: '0 0 auto', padding:'16px 22px',
+//             background:'var(--color-dark, #14110D)',
+//             display:'flex', flexDirection:'column', justifyContent:'center', gap:'10px',
+//           }}>
+//             <div style={{ textAlign:'center' }}>
+//               <p style={{ fontFamily:F_SANS, fontSize:'10px', fontWeight:600, color:'rgba(255,255,255,0.4)', letterSpacing:'0.06em', marginBottom:'2px' }}>
+//                 3 / 4 LDK Residences
+//               </p>
+//               <p style={{ fontFamily:F_SANS, fontSize:'8px', fontWeight:700, letterSpacing:'0.18em', textTransform:'uppercase', color:'rgba(255,255,255,0.25)', marginBottom:'4px' }}>
+//                 Starting at
+//               </p>
+//               <p style={{ fontFamily:F_SERIF, fontSize:'32px', fontWeight:600, color:'var(--color-gold)', lineHeight:1 }}>
+//                 ₹6.5 Cr*
+//               </p>
+//             </div>
+
+//             <button
+//               onClick={() => setIsOpen(true)}
+//               style={{
+//                 width:'100%', padding:'12px',
+//                 background:'var(--color-gold)', color:'var(--color-dark, #14110D)',
+//                 border:'none', borderRadius:'2px',
+//                 fontFamily:F_SANS, fontSize:'11px', fontWeight:700,
+//                 letterSpacing:'0.16em', textTransform:'uppercase', cursor:'pointer',
+//                 boxShadow:'0 4px 18px rgba(201,168,76,0.4)',
+//                 transition:'opacity 0.2s, transform 0.15s',
+//               }}
+//               onMouseEnter={e => { e.currentTarget.style.opacity='0.88'; e.currentTarget.style.transform='translateY(-1px)' }}
+//               onMouseLeave={e => { e.currentTarget.style.opacity='1'; e.currentTarget.style.transform='translateY(0)' }}
+//             >
+//               ↓ &nbsp;Request Brochure
+//             </button>
+
+//             {/* Trust mini */}
+//             <div style={{ display:'flex', gap:'4px' }}>
+//               {[
+//                 { icon:'📞', label:'Call\nBack'  },
+//                 { icon:'🚗', label:'Site\nVisit' },
+//                 { icon:'🏷', label:'Best\nPrice' },
+//               ].map((b, i) => (
+//                 <div key={i} style={{
+//                   flex:1, display:'flex', flexDirection:'column', alignItems:'center', gap:'3px',
+//                   padding:'5px 2px',
+//                   border:'1px solid rgba(255,255,255,0.07)',
+//                   borderRadius:'3px',
+//                   background:'rgba(255,255,255,0.04)',
+//                 }}>
+//                   <span style={{ fontSize:'13px', lineHeight:1 }}>{b.icon}</span>
+//                   <span style={{ fontFamily:F_SANS, fontSize:'7.5px', fontWeight:600, letterSpacing:'0.06em', textTransform:'uppercase', color:'rgba(255,255,255,0.3)', textAlign:'center', lineHeight:1.2, whiteSpace:'pre-line' }}>{b.label}</span>
+//                 </div>
+//               ))}
+//             </div>
+//           </div>
+
+//         </div>
+//       </div>
+//     </>
+//   )
+// }

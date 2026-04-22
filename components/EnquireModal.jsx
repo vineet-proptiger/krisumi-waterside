@@ -73,7 +73,7 @@ const EnquireModal = ({ isOpen, setIsOpen }) => {
             <div className="absolute inset-0" style={{ background: 'linear-gradient(to top, rgba(26,26,46,0.6) 0%, transparent 60%)' }} />
             <div className="absolute bottom-3 left-4 text-white z-10">
               <p className="text-[9px] uppercase tracking-[2px] opacity-80" style={{ fontFamily: F_SANS }}>Krisumi Waterside</p>
-              <p className="text-[11px] font-medium opacity-85" style={{ fontFamily: F_JOST }}>3+S / 4+S LDK · EOI ₹41 & 51 Lakh</p>
+              <p className="text-[11px] font-medium opacity-85" style={{ fontFamily: F_JOST }}>3+S / 4+S LDK · EOI ₹41 Lakh*</p>
             </div>
           </div>
 

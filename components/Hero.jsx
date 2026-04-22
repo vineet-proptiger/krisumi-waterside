@@ -220,7 +220,7 @@ const Hero = ({ setIsOpen }) => {
                 margin: '6px 0 2px', fontWeight: '600', letterSpacing: '0.08em',
                 textAlign: 'center', textTransform: 'uppercase',
               }}>
-               LIMITED RELEASE, UNMATCHED OPPORTUNITY  
+                LIMITED RELEASE, UNMATCHED OPPORTUNITY
               </p>
             </div>
 
@@ -358,14 +358,14 @@ export default Hero
 //         }
 //       `}</style>
 
-//       <div style={{ 
-//         width: '100%', 
-//         height: 'calc(100vh - 80px)', 
+//       <div style={{
+//         width: '100%',
+//         height: 'calc(100vh - 80px)',
 //         marginTop: '80px',
-//         display: 'flex', 
-//         flexDirection: 'column', 
-//         overflow: 'hidden', 
-//         background: '#14110D' 
+//         display: 'flex',
+//         flexDirection: 'column',
+//         overflow: 'hidden',
+//         background: '#14110D'
 //       }}>
 
 //         {/* ══════════════════════════════
@@ -410,7 +410,7 @@ export default Hero
 //           }} />
 
 //           {/* Top nav */}
-//           <nav 
+//           <nav
 //             className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between p-3 sm:p-6 lg:p-10"
 //             style={{
 //               background:'linear-gradient(to bottom, rgba(14,11,8,0.65) 0%, transparent 100%)',

@@ -17,6 +17,10 @@ const ContactCTA = () => {
   const [geoAddress, setGeoAddress] = useState(null)
 
   useEffect(() => {
+    if (typeof window !== 'undefined' && localStorage.getItem('_lsub_done') === '1') {
+      setSuccess(true)
+      return
+    }
     getGeo().then(d => {
       if (!d) return
       setIpAddress(d.ip || '')
@@ -29,6 +33,7 @@ const ContactCTA = () => {
   const submit = async (e) => {
     e.preventDefault()
     if (form.phone.length < 10) { setError('Enter valid 10-digit number'); return }
+    if (typeof window !== 'undefined' && localStorage.getItem('_lsub_done') === '1') { setSuccess(true); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields(ipAddress, geoAddress)
     const payload = new FormData()
@@ -45,7 +50,10 @@ const ContactCTA = () => {
     try {
       const res = await fetch(API_ENDPOINT, { method: 'POST', body: payload })
       const data = await res.json()
-      if (data.status) setSuccess(true)
+      if (data.status) {
+        if (typeof window !== 'undefined') localStorage.setItem('_lsub_done', '1')
+        setSuccess(true)
+      }
       else setError(data.msg || 'Something went wrong.')
     } catch { setError('Network error. Please try again.') }
     finally { setLoading(false) }

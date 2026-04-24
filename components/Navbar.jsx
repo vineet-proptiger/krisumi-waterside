@@ -42,7 +42,7 @@ const Navbar = ({ setIsOpen }) => {
       <div className="h-0.5 w-full" style={{ background: `linear-gradient(90deg, var(--color-gold), var(--color-gold-light), var(--color-gold))` }} />
 
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between h-[90px]">
+        <div className="flex items-center justify-between h-[75px]">
 
           {/* Logo */}
           <a href="#" className="flex items-center shrink-0">

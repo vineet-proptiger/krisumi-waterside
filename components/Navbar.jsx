@@ -21,8 +21,8 @@ const ProjectLogo = () => (
   <img
     src={logoImages.tarc}
     alt="Lodha"
-    className="h-14 md:h-20 w-auto object-contain transition-all"
-    style={{ maxWidth: '250px' }}
+    className="h-20 md:h-24 w-auto object-contain transition-all"
+    style={{ maxWidth: '350px' }}
   />
 )
 
@@ -42,7 +42,7 @@ const Navbar = ({ setIsOpen }) => {
       <div className="h-0.5 w-full" style={{ background: `linear-gradient(90deg, var(--color-gold), var(--color-gold-light), var(--color-gold))` }} />
 
       <div className="container mx-auto px-4 md:px-8">
-        <div className="flex items-center justify-between h-[80px]">
+        <div className="flex items-center justify-between h-[90px]">
 
           {/* Logo */}
           <a href="#" className="flex items-center shrink-0">

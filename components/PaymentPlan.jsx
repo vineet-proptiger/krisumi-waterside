@@ -6,24 +6,24 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const rows = [
   {
-    label: 'Booking Amount — Within 30 days from booking',
-    value: '10% of Sale Consideration (Less Advance amount on booking) + GST + Registration & Stamp Duty on Agreement for Sale',
+    label: 'Booking Amount — Within 30 Days of Booking',
+    value: '10% + GST + Registration & Stamp Duty',
   },
   {
-    label: 'Within 90 days from Booking',
-    value: '15% of Sale Consideration + GST',
+    label: 'Within 90 Days of Booking',
+    value: '15% + GST',
   },
   {
-    label: 'Within 36 Months from Booking OR Completion of 22ⁿᵈ Floor Slab, whichever is later',
-    value: '25% of Sale Consideration + GST',
+    label: 'Within 36 Months or 22nd Floor Slab Completion',
+    value: '25% + GST',
   },
   {
     label: 'On Application of OC',
-    value: '25% of Sale Consideration + GST',
+    value: '25% + GST',
   },
   {
     label: 'On Offer of Possession',
-    value: '25% of Sale Consideration + GST + IFMSD + Registration & Stamp Duty on Conveyance Deed + Service Related Charges',
+    value: '25% + GST + IFMSD + Other Charges',
   },
 ]
 

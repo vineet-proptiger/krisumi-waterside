@@ -124,7 +124,7 @@ const Hero = ({ setIsOpen }) => {
                 letterSpacing: '0.01em', lineHeight: 1.5
               }}
                 data-aos="fade-up" data-aos-delay="280">
-                Krisumi <strong style={{ color: "var(--color-gold)", fontWeight: "800" }}>Forest Reserve</strong> presents <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>Indo‑Japanese</strong> themed ultra-luxury residences, an exclusive <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>new-launch</strong> on Dwarka Expressway.
+                Krisumi <strong style={{ color: "var(--color-gold)", fontWeight: "800", fontStyle: "italic", fontSize: "14px" }}> The Forest Reserve</strong> presents <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>Indo‑Japanese</strong> themed ultra-luxury residences, an exclusive <strong style={{ color: "var(--color-dark)", fontWeight: "800" }}>new-launch</strong> on Dwarka Expressway.
               </p>
               {/* ── Google Rating ── */}
               {/* <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px' }}
@@ -158,7 +158,7 @@ const Hero = ({ setIsOpen }) => {
                 { value: '33', label: ' Acres Integrated Township' },
                 { value: '3 & 4 LDK', label: 'Configuration' },
                 { value: '25:25:50', label: 'Payment Plan' },
-                { value: '₹41 Lacs*', label: 'EOI (non-bankable cheques)' },
+                // { value: '₹30 Lacs*', label: 'EOI (non-bankable cheques)' },
               ].map((s, i) => (
                 <div key={i} style={{
                   textAlign: 'center',
@@ -198,7 +198,7 @@ const Hero = ({ setIsOpen }) => {
                 'Two Iconic Skyline Towers',
                 'Cascades Club – 1.6 Lakh* sq. ft.',
                 'A Fusion of Indo‑Japanese Artistry',
-                'A Rare Life Surrounded by Nature',
+                'Pay Just 25% Now & Nothing For 3 Years',
               ].map((item, i, arr) => (
                 <div key={i}>
                   <p style={{
@@ -248,7 +248,7 @@ const Hero = ({ setIsOpen }) => {
                 color: 'var(--color-gold)',
                 fontFamily: F_JOST, lineHeight: 1, display: 'block',
               }}>
-                ₹6.5 Cr* Onwards
+                ₹5.9 Cr* Onwards
               </span>
             </div>
 

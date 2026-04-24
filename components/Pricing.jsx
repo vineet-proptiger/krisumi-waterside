@@ -6,9 +6,9 @@ const PRIMARY = "var(--color-primary)";
 
 const units = [
   {
-    type: "3+S LDK (Core to 4)",
-    size: "2700 - 2800 sq.ft",
-    price: "EOI ₹41 Lakh*",
+    type: "3 LDK + S",
+    size: "2,733 sq.ft",
+    price: "₹30 Lacs*",
     oldPrice: null,
     btnText: "Get Cost Sheet",
     features: [
@@ -19,21 +19,8 @@ const units = [
     isPopular: false,
   },
   {
-    type: "3+S LDK (Core to 6)",
-    size: "2700 - 2800 sq.ft",
-    price: "Ask For Price",
-    oldPrice: null,
-    btnText: "Get Cost Sheet",
-    features: [
-      "Tentative Payment Plan: 25:25:50",
-      "Rentals ₹80 psf & Rising",
-      "If Bankable Gets 1st Priority"
-    ],
-    isPopular: false,
-  },
-  {
-    type: "4+S LDK (Core to 4)",
-    size: "3500 - 3650 sq.ft",
+    type: "4 LDK + S",
+    size: "3,630 sq.ft",
     price: "Ask For Price",
     oldPrice: null,
     btnText: "Get Cost Sheet",
@@ -43,6 +30,19 @@ const units = [
       "If Bankable Gets 1st Priority"
     ],
     isPopular: true,
+  },
+  {
+    type: "Penthouse",
+    size: "7,575 sq.ft",
+    price: "Ask For Price",
+    oldPrice: null,
+    btnText: "Get Cost Sheet",
+    features: [
+      "Tentative Payment Plan: 25:25:50",
+      "Rentals ₹80 psf & Rising",
+      "If Bankable Gets 1st Priority"
+    ],
+    isPopular: false,
   },
   
 ];

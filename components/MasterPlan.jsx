@@ -8,9 +8,9 @@ const F_SANS = 'var(--font-sans), Open Sans, sans-serif'
 
 const plans = [
   { label: 'Site Master Plan',                    img: masterplanImages.masterPlan },
-  { label: '3+S LDK (Core to 4) — 2700-2800 SF', img: masterplanImages.bhk3 },
-  { label: '3+S LDK (Core to 6) — 2700-2800 SF', img: masterplanImages.bhk45 },
-  { label: '4+S LDK (Core to 4) — 3500-3650 SF', img: masterplanImages.bhk2 },
+  { label: '3 LDK + S - 2,733 sq.ft', img: masterplanImages.bhk3 },
+  { label: 'Penthouse - 7,575 sq.ft', img: masterplanImages.bhk2 },
+  
 ]
 
 const MasterPlan = ({ setIsOpen }) => {

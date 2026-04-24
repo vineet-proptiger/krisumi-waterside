@@ -33,7 +33,7 @@ const nephilm = localFont({
 
 export const metadata = {
   title: 'Krisumi Waterside | Ultra-Luxury 3+S & 4+S LDK Forest Residences — Phase 5, Gurgaon',
-  description: 'Krisumi Waterside — Ultra-luxury 3+S LDK & 4+S LDK forest residences at Phase 5, The Forest Reserve. Part of 33-acre Krisumi City, Gurgaon. EOI ₹41 Lakh*. By Sumitomo Corp & Krishna Group.',
+  description: 'Krisumi Waterside — Ultra-luxury 3+S LDK & 4+S LDK forest residences at Phase 5, The Forest Reserve. Part of 33-acre Krisumi City, Gurgaon. ₹30 Lacs*. By Sumitomo Corp & Krishna Group.',
 }
 
 export default function RootLayout({ children }) {

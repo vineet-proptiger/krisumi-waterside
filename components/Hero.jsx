@@ -158,7 +158,7 @@ const Hero = ({ setIsOpen }) => {
                 { value: '33', label: ' Acres Integrated Township' },
                 { value: '3 & 4 LDK', label: 'Configuration' },
                 { value: '25:25:50', label: 'Payment Plan' },
-                // { value: '₹30 Lacs*', label: 'EOI (non-bankable cheques)' },
+                { value: '₹30 Lacs*', label: 'EOI Starts at' },
               ].map((s, i) => (
                 <div key={i} style={{
                   textAlign: 'center',

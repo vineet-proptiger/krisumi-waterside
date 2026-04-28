@@ -32,7 +32,7 @@ const ContactCTA = () => {
 
   const submit = async (e) => {
     e.preventDefault()
-    if (form.phone.length < 10) { setError('Enter valid 10-digit number'); return }
+    if (form.phone.replace(/\D/g, '').length < 10) { setError('Enter valid 10-digit number'); return }
     if (typeof window !== 'undefined' && localStorage.getItem('_lsub_done') === '1') { setSuccess(true); return }
     setError(''); setLoading(true)
     const tracking = buildTrackingFields(ipAddress, geoAddress)

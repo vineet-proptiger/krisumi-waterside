@@ -81,7 +81,7 @@ window.dataLayer.push({ 'city': '${CITY_DISPLAY}' });
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());`}
         </Script>
-        {children}
+        {children}  
       </body>
     </html>
   )
